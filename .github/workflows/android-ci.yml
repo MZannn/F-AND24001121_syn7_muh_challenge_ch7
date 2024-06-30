@@ -48,3 +48,12 @@ jobs:
         run: ./gradlew connectedAndroidTest
         env:
           ANDROID_SDK_ROOT: ${{ env.ANDROID_HOME }}
+
+      - name: Archive Test Reports
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-reports
+          path: |
+            **/build/reports/tests/testDebugUnitTest/
+            **/build/reports/tests/testReleaseUnitTest/
