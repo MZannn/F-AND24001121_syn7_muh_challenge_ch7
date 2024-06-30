@@ -3,6 +3,8 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("androidx.navigation.safeargs.kotlin")
     id("kotlin-kapt")
+    id("com.google.gms.google-services")
+    id("com.google.firebase.firebase-perf")
 }
 
 android {
@@ -83,6 +85,8 @@ dependencies {
     implementation("io.insert-koin:koin-android:3.5.0")
 
     implementation("androidx.datastore:datastore-preferences:1.1.1")
+    implementation("com.google.firebase:firebase-analytics:22.0.2")
+    implementation("com.google.firebase:firebase-perf:21.0.1")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
