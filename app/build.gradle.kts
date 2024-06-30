@@ -88,6 +88,8 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics:22.0.2")
     implementation("com.google.firebase:firebase-perf:21.0.1")
 
+    implementation("com.google.guava:guava:33.2.1-jre")
+
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
