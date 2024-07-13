@@ -59,9 +59,9 @@ android {
 }
 
 dependencies {
-    implementation(project(":data"))
     implementation(project(":common"))
     implementation(project(":domain"))
+    implementation(project(":di"))
 
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.appcompat:appcompat:1.7.0")

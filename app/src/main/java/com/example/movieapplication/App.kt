@@ -3,8 +3,9 @@ package com.example.movieapplication
 import android.app.Application
 import android.content.Context
 import android.util.Log
-import com.example.data.network.di.DataModule
-import com.example.domain.di.DomainModule
+import com.example.di.DataModule
+
+
 import com.example.movieapplication.di.AppModule.uiModule
 
 import org.koin.android.ext.koin.androidContext
@@ -18,7 +19,7 @@ class App : Application() {
             androidContext(this@App)
             modules(
                 listOf(
-                    DataModule.dataModule, DomainModule.dataModule, uiModule
+                    DataModule.dataModule, uiModule
                 )
             )
         }

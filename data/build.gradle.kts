@@ -40,9 +40,6 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("com.google.android.material:material:1.12.0")
 
-    implementation("io.insert-koin:koin-core:3.2.2")
-    implementation("io.insert-koin:koin-android:3.5.0")
-
     implementation ("androidx.room:room-runtime:2.6.1")
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
     annotationProcessor("androidx.room:room-compiler:2.6.1")
